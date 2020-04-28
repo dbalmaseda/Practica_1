@@ -77,7 +77,7 @@ Utilicé el patrón '@SRR' y me dieron 131950, zless sra_data.fastq.gz | grep SR
 	El formato .fastq es una extensión al formato fasta pero este nos indica la calidad asociada a cada nucleótido. LAs líneas indican lo siguiente:
 1. Nombre de la secuencia
 2. Secuencia
-3. + / Nombre de la secuencia
+3. +/ Nombre de la secuencia
 4. Valor de calidad codificado
 
 less solo nos da toda la información mientras que less -S sólo nos da la primera fila.
