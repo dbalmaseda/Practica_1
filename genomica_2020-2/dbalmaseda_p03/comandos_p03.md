@@ -19,7 +19,9 @@ tblastn | BLAST traducido a nucleótidos | Una secuenia de proteínas es compara
 # Parte II.
 01. El problrema de los puentes de Euler consiste en 4 islas conectadas por 7 puentes, la idea es pasar por los 7 puentes sin pasar dos veces por el mismo puente. No se puede resolver dado que al representar el problema en forma de gráfica, siendo las islas los nodos y los puentes las aristas, entonces cada nodo tiene grado impar por lo que en algún momento al entrar a una ciudad ya no podras salir de esta sin usar el mismo puente. 
 
-02. 
+02. Para secuencias muy grandes las gráficas se complican demasiado.
+No hay un mecanísmo eficiente creado para encontrar un cíclo Hamiltoniano para gráficas con millones de nodos.
+Las computadoras tienen cierta capacidad y se vuelve tardado el proceso.
 
 03. **N50** se refiere a una medida de la longitud media de un conjunto de secuencias nucleótidas, este estadístico es empleado en el ensambe de genomas para la longitud de los *contig*. Desde un punto de vista matemático el **N50** se define como la longitud N por la cual el 50% de todas las bases en las secuencias de longitud L<N
  Dado un conjunto de *contig*, **L50** se define como el menor número de *contigs* tal que la suma de su longitud sea la mitad de la longitud del genoma.
