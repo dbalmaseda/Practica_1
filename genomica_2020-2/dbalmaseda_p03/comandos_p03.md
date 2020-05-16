@@ -11,9 +11,9 @@
 02. 
 BLAST | Definición | Aplicación
 ----- | ---------- | -----------
-blastn |  | Compara una secuencia de nucleótidos contra una base de datos que contiene secuencias de nucleótidos |
-blastp | Este es un BLAST con gaps | Se emplea para aminoácidos |
-tblastn |   | Compara secuenias proteicas con bases de datos de nucleótidos |
+blastn | Basic Local Alignment Search Tool for nucleotides | Compara una secuencia de nucleótidos contra una base de datos que contiene secuencias de nucleótidos |
+blastp | Este es un BLAST con gaps, para comparación de proteínas | Se emplea para comparar secuencias de aminoácidos contra bases de aminoácidos|
+tblastn | BLAST traducido a nucleótidos | Una secuenia de proteínas es comparada con la traducción de 'six-frame' de secuencias en una bases de datos de nucleótidos |
 
 03. En el artículo [The genome of Leishmania adleri from a mammalian host highlights chromosome fission in Sauroleishmania](https://www.nature.com/articles/srep43747.pdf) realizaron el análisis de la librería ` MARV/ET/1975/HO174 `, donde `HO174` se refiere a una especie de Leishmanias. Primero se realizó el análisis de calidad usando FastQC, luego dependiendo de los alineamientos del FastQC fueron eliminados los primer de la secuencias de PCR, a continuación determinaron los contaminantes de ADN usando BLASTn, finalmente se corrió otra ves el FastQC para eliminar el contenido de excesos de GC. A continuación estas lecturas procesadas fueron ensambladas *de novo* empleando Velvet v1.2.09 con kmer de 53. 
 # Parte II.
