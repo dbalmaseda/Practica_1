@@ -14,6 +14,7 @@ Para filtrar con ERNE:
 Para indexar el genoma del SARS_CoV2:
 
 `bowtie2-build MN908947.fna SARS_CoV2`
+
 `cp bowtie2_archives/*.bt2 miniconda3/bin/indexes`
 
 Para alinear los archivos con bowtie2 de manera local y guardar los reads alineados como archivos fastq en el directorio /aligned:
@@ -27,4 +28,5 @@ Para obtener los estadísticos del alineamiento:
 Para obtener el archivo bam sólo con las secuencias que alinearon al genoma de referencia:
 
 `samtools sort SARS_bowtie_local.sam -o SARS-CoV2_local_sorted.bam`
+
 `samtools view -b -F 4 SARS-CoV2_local_sorted.bam -o SARS_aligned_bowtie2.bam`
