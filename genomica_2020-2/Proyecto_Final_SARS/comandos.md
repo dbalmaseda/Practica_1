@@ -6,12 +6,13 @@
 * Luis Tenorio
 
 
+### Limpieza (ERNE)
 
 Para filtrar con ERNE:
 
 `erne-filter --min-mean-phred-quality 20 --query1 SRR10971381_1.fastq.gz --query2 SRR10971381_2.fastq.gz --output-prefix erne-filter-trimmed`
 
-
+### Alineamiento (Bowtie2 y SAMtools)
 Para indexar el genoma del SARS_CoV2:
 
 `bowtie2-build MN908947.fna SARS_CoV2`
