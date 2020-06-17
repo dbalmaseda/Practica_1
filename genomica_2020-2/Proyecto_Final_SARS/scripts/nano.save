@@ -1,0 +1,5 @@
+#!/bin/bash
+
+fastqc #!/bin/bash
+
+fastqc file_1.fastq file_2.fastq_1.fastq SRR10971381_2.fastq
